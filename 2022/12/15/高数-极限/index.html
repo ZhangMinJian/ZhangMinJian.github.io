@@ -1,0 +1,166 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>高数--极限 | butterfly</title><meta name="author" content="ZMJ"><meta name="copyright" content="ZMJ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="求无穷比无穷型的极限1.找出无穷大的项  2.找出各个无穷大项的指数 3.分子与分母上，只保留指数最大的无穷大项，去掉其它项  利用等价无穷小求0比0型极限 注：要有整体思维 用洛必达法则求0比0或者无穷比无穷的极限 求·无穷乘0型 主要是换成其它的模型 我们有方法求的模型 求底数指数都有x的极限 函数的左右极限及需要求左右极限的情形需要求左右极限的情形 所有极限都可以求左右极限，但是很费事 只有">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高数--极限">
+<meta property="og:url" content="http://example.com/2022/12/15/%E9%AB%98%E6%95%B0-%E6%9E%81%E9%99%90/index.html">
+<meta property="og:site_name" content="butterfly">
+<meta property="og:description" content="求无穷比无穷型的极限1.找出无穷大的项  2.找出各个无穷大项的指数 3.分子与分母上，只保留指数最大的无穷大项，去掉其它项  利用等价无穷小求0比0型极限 注：要有整体思维 用洛必达法则求0比0或者无穷比无穷的极限 求·无穷乘0型 主要是换成其它的模型 我们有方法求的模型 求底数指数都有x的极限 函数的左右极限及需要求左右极限的情形需要求左右极限的情形 所有极限都可以求左右极限，但是很费事 只有">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-12-15T13:20:51.000Z">
+<meta property="article:modified_time" content="2022-12-15T14:37:48.350Z">
+<meta property="article:author" content="ZMJ">
+<meta name="twitter:card" content="summary"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2022/12/15/%E9%AB%98%E6%95%B0-%E6%9E%81%E9%99%90/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '高数--极限',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-12-15 22:37:48'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">butterfly</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">高数--极限</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-12-15T13:20:51.000Z" title="发表于 2022-12-15 21:20:51">2022-12-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-12-15T14:37:48.350Z" title="更新于 2022-12-15 22:37:48">2022-12-15</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="高数--极限"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="求无穷比无穷型的极限"><a href="#求无穷比无穷型的极限" class="headerlink" title="求无穷比无穷型的极限"></a>求无穷比无穷型的极限</h1><p><strong>1.找出无穷大的项</strong></p>
+<p><img src="https://cdn.staticaly.com/gh/ZhangMinJian/blog_tupian@master/1671110680437.5l4nyg1jrio0.webp"></p>
+<p><strong>2.找出各个无穷大项的指数</strong></p>
+<p><strong>3.分子与分母上，只保留指数最大的无穷大项，去掉其它项</strong></p>
+<p><img src="https://cdn.staticaly.com/gh/ZhangMinJian/blog_tupian@master/086c02ca0091215454ef04093bc8455.n8yksmlfjo0.webp"></p>
+<h2 id="利用等价无穷小求0比0型极限"><a href="#利用等价无穷小求0比0型极限" class="headerlink" title="利用等价无穷小求0比0型极限"></a>利用等价无穷小求0比0型极限</h2><p><img src="https://cdn.staticaly.com/gh/ZhangMinJian/blog_tupian@master/e8b6196860dcc6e639f95f5d5f5a41c.5d5u8esa9gg0.webp"></p>
+<p><strong>注：要有整体思维</strong></p>
+<h1 id="用洛必达法则求0比0或者无穷比无穷的极限"><a href="#用洛必达法则求0比0或者无穷比无穷的极限" class="headerlink" title="用洛必达法则求0比0或者无穷比无穷的极限"></a>用洛必达法则求0比0或者无穷比无穷的极限</h1><p><img src="https://cdn.staticaly.com/gh/ZhangMinJian/blog_tupian@master/ebd76cf446620c4a1a9c1d1a305f560.64boouym50c0.webp"></p>
+<h1 id="求·无穷乘0型"><a href="#求·无穷乘0型" class="headerlink" title="求·无穷乘0型"></a>求·无穷乘0型</h1><p><img src="https://cdn.staticaly.com/gh/ZhangMinJian/blog_tupian@master/ca7e9e1b82f8965432104f91851ea98.70je7s00rdo0.webp"></p>
+<p>主要是换成其它的模型 我们有方法求的模型</p>
+<h1 id="求底数指数都有x的极限"><a href="#求底数指数都有x的极限" class="headerlink" title="求底数指数都有x的极限"></a>求底数指数都有x的极限</h1><p><img src="https://cdn.staticaly.com/gh/ZhangMinJian/blog_tupian@master/64eeb84f83e88c6ba6ec76e1c0c6953.adsaeyeo78w.webp"></p>
+<h1 id="函数的左右极限及需要求左右极限的情形"><a href="#函数的左右极限及需要求左右极限的情形" class="headerlink" title="函数的左右极限及需要求左右极限的情形"></a>函数的左右极限及需要求左右极限的情形</h1><h2 id="需要求左右极限的情形"><a href="#需要求左右极限的情形" class="headerlink" title="需要求左右极限的情形"></a>需要求左右极限的情形</h2><p><img src="https://cdn.staticaly.com/gh/ZhangMinJian/blog_tupian@master/1912f67aab6f2a4fb8fbc49a40ed5ed.6aqdxkd9tcg0.webp"></p>
+<p>所有极限都可以求左右极限，但是很费事 只有这三种情况下才一定要求左右极限 ，因为直接求极限是不能判断是否极限存在</p>
+<p><strong>极限存在的条件：左右极限相等</strong></p>
+<h2 id="如何求左右极限"><a href="#如何求左右极限" class="headerlink" title="如何求左右极限"></a>如何求左右极限</h2><p><img src="https://cdn.staticaly.com/gh/ZhangMinJian/blog_tupian@master/546fe32259a0febdf9f68e4d833d3d6.1qa51tk74bk0.webp"></p>
+<h1 id="极限的拆分"><a href="#极限的拆分" class="headerlink" title="极限的拆分"></a>极限的拆分</h1><p><img src="https://cdn.staticaly.com/gh/ZhangMinJian/blog_tupian@master/ba92eca49ddef265e5f1d7b725d60ce.6my4kx4v2u80.webp"></p>
+<h1 id="无穷小的比较（比较少考）"><a href="#无穷小的比较（比较少考）" class="headerlink" title="无穷小的比较（比较少考）"></a>无穷小的比较（比较少考）</h1><p><img src="https://cdn.staticaly.com/gh/ZhangMinJian/blog_tupian@master/ac74ddb2dfaf7c7ae5921e1d930ba17.3anheih3t7k0.webp"></p>
+<h1 id="利用极限的保号性判定极值点"><a href="#利用极限的保号性判定极值点" class="headerlink" title="利用极限的保号性判定极值点"></a>利用极限的保号性判定极值点</h1><p><img src="https://cdn.staticaly.com/gh/ZhangMinJian/blog_tupian@master/0d307f0d7875b59c0cdd8ac05f3d591.231ythe22hs0.webp"></p>
+<h1 id="零点定理"><a href="#零点定理" class="headerlink" title="零点定理"></a>零点定理</h1><p><img src="https://cdn.staticaly.com/gh/ZhangMinJian/blog_tupian@master/b676777e9f09a2eebcd7f22186c8e0e.4ukryvq59rs0.webp"></p>
+<h1 id="间断点"><a href="#间断点" class="headerlink" title="间断点"></a>间断点</h1><p>先求间断点</p>
+<p><img src="https://cdn.staticaly.com/gh/ZhangMinJian/blog_tupian@master/74b664f6877b99644037610ee7c5f19.2xw1tae5v9s0.webp"></p>
+<p><img src="https://cdn.staticaly.com/gh/ZhangMinJian/blog_tupian@master/1d49f61e681fdd3594081f9f7e0f1dc.o468yiwpqwg.webp"></p>
+<p>再代入判断 间断点的类型</p>
+<p><img src="https://cdn.staticaly.com/gh/ZhangMinJian/blog_tupian@master/2bf048d4127a14854e7ea85c897b516.6ijp5h6fzgo0.webp"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://example.com">ZMJ</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2022/12/15/%E9%AB%98%E6%95%B0-%E6%9E%81%E9%99%90/">http://example.com/2022/12/15/%E9%AB%98%E6%95%B0-%E6%9E%81%E9%99%90/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">butterfly</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/12/14/%E5%87%BD%E6%95%B0/"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">函数</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ZMJ</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B1%82%E6%97%A0%E7%A9%B7%E6%AF%94%E6%97%A0%E7%A9%B7%E5%9E%8B%E7%9A%84%E6%9E%81%E9%99%90"><span class="toc-number">1.</span> <span class="toc-text">求无穷比无穷型的极限</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A9%E7%94%A8%E7%AD%89%E4%BB%B7%E6%97%A0%E7%A9%B7%E5%B0%8F%E6%B1%820%E6%AF%940%E5%9E%8B%E6%9E%81%E9%99%90"><span class="toc-number">1.1.</span> <span class="toc-text">利用等价无穷小求0比0型极限</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8%E6%B4%9B%E5%BF%85%E8%BE%BE%E6%B3%95%E5%88%99%E6%B1%820%E6%AF%940%E6%88%96%E8%80%85%E6%97%A0%E7%A9%B7%E6%AF%94%E6%97%A0%E7%A9%B7%E7%9A%84%E6%9E%81%E9%99%90"><span class="toc-number">2.</span> <span class="toc-text">用洛必达法则求0比0或者无穷比无穷的极限</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B1%82%C2%B7%E6%97%A0%E7%A9%B7%E4%B9%980%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">求·无穷乘0型</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B1%82%E5%BA%95%E6%95%B0%E6%8C%87%E6%95%B0%E9%83%BD%E6%9C%89x%E7%9A%84%E6%9E%81%E9%99%90"><span class="toc-number">4.</span> <span class="toc-text">求底数指数都有x的极限</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E7%9A%84%E5%B7%A6%E5%8F%B3%E6%9E%81%E9%99%90%E5%8F%8A%E9%9C%80%E8%A6%81%E6%B1%82%E5%B7%A6%E5%8F%B3%E6%9E%81%E9%99%90%E7%9A%84%E6%83%85%E5%BD%A2"><span class="toc-number">5.</span> <span class="toc-text">函数的左右极限及需要求左右极限的情形</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9C%80%E8%A6%81%E6%B1%82%E5%B7%A6%E5%8F%B3%E6%9E%81%E9%99%90%E7%9A%84%E6%83%85%E5%BD%A2"><span class="toc-number">5.1.</span> <span class="toc-text">需要求左右极限的情形</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E6%B1%82%E5%B7%A6%E5%8F%B3%E6%9E%81%E9%99%90"><span class="toc-number">5.2.</span> <span class="toc-text">如何求左右极限</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9E%81%E9%99%90%E7%9A%84%E6%8B%86%E5%88%86"><span class="toc-number">6.</span> <span class="toc-text">极限的拆分</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83%EF%BC%88%E6%AF%94%E8%BE%83%E5%B0%91%E8%80%83%EF%BC%89"><span class="toc-number">7.</span> <span class="toc-text">无穷小的比较（比较少考）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%A9%E7%94%A8%E6%9E%81%E9%99%90%E7%9A%84%E4%BF%9D%E5%8F%B7%E6%80%A7%E5%88%A4%E5%AE%9A%E6%9E%81%E5%80%BC%E7%82%B9"><span class="toc-number">8.</span> <span class="toc-text">利用极限的保号性判定极值点</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9B%B6%E7%82%B9%E5%AE%9A%E7%90%86"><span class="toc-number">9.</span> <span class="toc-text">零点定理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%97%B4%E6%96%AD%E7%82%B9"><span class="toc-number">10.</span> <span class="toc-text">间断点</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/12/15/%E9%AB%98%E6%95%B0-%E6%9E%81%E9%99%90/" title="高数--极限"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="高数--极限"/></a><div class="content"><a class="title" href="/2022/12/15/%E9%AB%98%E6%95%B0-%E6%9E%81%E9%99%90/" title="高数--极限">高数--极限</a><time datetime="2022-12-15T13:20:51.000Z" title="发表于 2022-12-15 21:20:51">2022-12-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/14/%E5%87%BD%E6%95%B0/" title="函数"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="函数"/></a><div class="content"><a class="title" href="/2022/12/14/%E5%87%BD%E6%95%B0/" title="函数">函数</a><time datetime="2022-12-14T07:44:29.000Z" title="发表于 2022-12-14 15:44:29">2022-12-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/13/%E5%88%86%E6%94%AF%E5%92%8C%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/" title="分支和循环语句"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="分支和循环语句"/></a><div class="content"><a class="title" href="/2022/12/13/%E5%88%86%E6%94%AF%E5%92%8C%E5%BE%AA%E7%8E%AF%E8%AF%AD%E5%8F%A5/" title="分支和循环语句">分支和循环语句</a><time datetime="2022-12-13T14:25:18.000Z" title="发表于 2022-12-13 22:25:18">2022-12-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/13/%E9%AB%98%E6%95%B0--%E7%A7%AF%E5%88%86/" title="高数--积分"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="高数--积分"/></a><div class="content"><a class="title" href="/2022/12/13/%E9%AB%98%E6%95%B0--%E7%A7%AF%E5%88%86/" title="高数--积分">高数--积分</a><time datetime="2022-12-13T09:20:22.300Z" title="发表于 2022-12-13 17:20:22">2022-12-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/12/06/%E6%95%B0%E7%BB%84/" title="数组"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="数组"/></a><div class="content"><a class="title" href="/2022/12/06/%E6%95%B0%E7%BB%84/" title="数组">数组</a><time datetime="2022-12-06T04:23:10.000Z" title="发表于 2022-12-06 12:23:10">2022-12-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By ZMJ</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
